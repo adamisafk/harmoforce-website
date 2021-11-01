@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "aws-sdk": "^2.1018.0",
+    "axios": "^0.24.0",
     "classnames": "^2.2.6",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
@@ -36,6 +38,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {}
+  }
 }

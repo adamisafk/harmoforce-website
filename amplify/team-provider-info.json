@@ -1,0 +1,26 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-harmoforce-dev-164547-authRole",
+      "UnauthRoleArn": "arn:aws:iam::900414946269:role/amplify-harmoforce-dev-164547-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::900414946269:role/amplify-harmoforce-dev-164547-authRole",
+      "Region": "eu-west-2",
+      "DeploymentBucketName": "amplify-harmoforce-dev-164547-deployment",
+      "UnauthRoleName": "amplify-harmoforce-dev-164547-unauthRole",
+      "StackName": "amplify-harmoforce-dev-164547",
+      "StackId": "arn:aws:cloudformation:eu-west-2:900414946269:stack/amplify-harmoforce-dev-164547/3065c6b0-3b33-11ec-810c-06e73771d8c4",
+      "AmplifyAppId": "d1dludnmzsfi2w"
+    },
+    "categories": {
+      "storage": {
+        "harmoforcedelegators": {
+          "tableName": "harmoforce_delegators",
+          "region": "eu-west-2",
+          "arn": "arn:aws:dynamodb:eu-west-2:900414946269:table/harmoforce_delegators",
+          "partitionKeyName": "address",
+          "partitionKeyType": "S"
+        }
+      }
+    }
+  }
+}

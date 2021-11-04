@@ -68,3 +68,37 @@ export const getValidatorAddress = async () => {
     const data = await docClient.scan(params).promise();
     return data.Items
 }
+
+export const createDelegator = async (address) => {
+    var params = {
+        TableName: "harmoforce_delegators",
+        Item: {
+            "address": address,
+            "amount": 0,
+            "isValidator": false
+        }
+    };
+    docClient.put(params, function(err, data) {
+        if (err) {
+            console.error("Unable to add item. Error JSON:", JSON.stringify(err, null, 2));
+        } else {
+            console.log("Added item:", JSON.stringify(data, null, 2));
+        }
+    });
+}
+
+export const deleteDelegator = async (address) => {
+    var params = {
+        TableName: "harmoforce_delegators",
+        Key: {
+            "address": address
+        }
+    };
+    docClient.delete(params, function(err, data) {
+        if (err) {
+            console.error("Unable to delete item. Error JSON:", JSON.stringify(err, null, 2));
+        } else {
+            console.log("DeleteItem succeeded:", JSON.stringify(data, null, 2));
+        }
+    });
+}

@@ -34,14 +34,14 @@ const App = () => {
 
   return (
     <ScrollReveal
-      ref={childRef}
-      children={() => (
-        <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
-          <AppRoute exact path="/pool" component={Pool} layout={LayoutDefault} />
-          <AppRoute exact path="/pool/" component={Pool} layout={LayoutDefault} />
-        </Switch>
-      )} />
+    ref={childRef}
+    children={() => (
+      <Switch>
+        <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+        <AppRoute exact path="/pool" component={Pool} layout={LayoutDefault} />
+        <AppRoute exact path="/pool/" component={Pool} layout={LayoutDefault} />
+      </Switch>
+    )} />
   );
 }
 

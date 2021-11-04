@@ -110,11 +110,29 @@
 
 .button-secondary {
 	color: color(button-secondary);
-    background-color: color-bg(button-secondary);
+    background-color: #4caf50;
 	border-color: color-border(button-secondary);
 
     &:hover {
-        background-color: color-bg(button-secondary-hover);
+        background-color: #6fbf73;
+		border-color: color-border(button-secondary-hover);
+    }
+
+	&.is-loading {
+
+		&::after {
+			border-color: color(button-secondary);
+		}
+	}
+}
+
+.button-error {
+	color: color(button-secondary);
+    background-color: #f44336;
+	border-color: color-border(button-secondary);
+
+    &:hover {
+        background-color: #f6685e;
 		border-color: color-border(button-secondary-hover);
     }
 

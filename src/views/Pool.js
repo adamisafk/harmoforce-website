@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 // import sections
+import { AddDelegator } from './partials/AddDelegator'
 
 import {fetchDelegators} from '../utils/DynamoDB'
 import {getValidator} from '../utils/HarmonyAPI'
@@ -64,10 +65,14 @@ export class Pool extends Component {
           <div className="container-sm">
             <div className="hero-inner section-inner">
               <div className="center-content">
-                <h6 className="m-0">Total Stake: {this.totalStake()}</h6>
-                <h6 className="mt-0">Effective Stake: {this.effectiveStake()}</h6>
+                <AddDelegator delegators={this.state.delegators} />
               </div>
               <div>
+                <div className="center-content">
+                  <h5 className="m-0">Harmoforce Stats:</h5>
+                  <h6 className="m-0">Total Stake: {this.totalStake()}</h6>
+                  <h6 className="mt-0">Effective Stake: {this.effectiveStake()}</h6>
+                </div>
                 <table>
                   <thead>
                     <th><h4 className="m-0">Delegator</h4></th>
